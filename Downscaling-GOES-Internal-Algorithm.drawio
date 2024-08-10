@@ -1,0 +1,70 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" version="24.7.6">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="989" dy="542" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="yIfiVK84djzsoDWenFQo-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#23445D;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-3" target="yIfiVK84djzsoDWenFQo-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-3" value="&lt;b style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Pre-process GOES Data&lt;/font&gt;&lt;/b&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;GOES-Modis_U-Net_Data_Preprocessing.ipynb&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;b&gt;Input:&lt;/b&gt; 2-km GOES-R-ABI-16 - GOES imager projection&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;b&gt;Output: &lt;/b&gt;GOES 500m masked data clipped to SAIL - EPSG 32613, GOES 500m non-masked data clipped to SAIL&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;b&gt;Files: &lt;/b&gt;nan-data, goes-output-data&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;labelBackgroundColor=none;fillColor=#182E3E;strokeColor=#FFFFFF;fontColor=#FFFFFF;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="125" y="40" width="195" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="yIfiVK84djzsoDWenFQo-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;strokeColor=#23445D;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="yIfiVK84djzsoDWenFQo-1" target="yIfiVK84djzsoDWenFQo-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yIfiVK84djzsoDWenFQo-1" value="&lt;b style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Pre-process MODIS Data&lt;/font&gt;&lt;/b&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;GOES-Modis_U-Net_Data_Preprocessing.ipynb&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;b&gt;Input:&lt;/b&gt; 500m MCD43A3 (surface albedo) - MODIS projection&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;b&gt;Output:&lt;/b&gt; 500m MCD43A3 clipped to Colorado - EPSG:4326&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;font-size: 10px;&quot;&gt;Files:&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;background-color: initial; font-size: 10px;&quot;&gt;reprojected_colorado_modis_data_lat_lon&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;labelBackgroundColor=none;fillColor=#182E3E;strokeColor=#FFFFFF;fontColor=#FFFFFF;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="510" y="40" width="230" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="yIfiVK84djzsoDWenFQo-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#23445D;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="yIfiVK84djzsoDWenFQo-2" target="yIfiVK84djzsoDWenFQo-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yIfiVK84djzsoDWenFQo-2" value="&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;b&gt;Calculate MODIS Blue Sky Albedo&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;calculate_modis_blue_sky_albedo.ipynb&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;b&gt;Input:&lt;/b&gt; 500m MCD43A3 - MODIS projection, CERES AOD - EPSG:4326, diffuse skylight lookup table&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;b&gt;Output:&lt;/b&gt; 500m MODIS blue sky albedo - EPSG:4326&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;b&gt;Files: &lt;/b&gt;blue_sky_albedo_colorado&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;labelBackgroundColor=none;fillColor=#182E3E;strokeColor=#FFFFFF;fontColor=#FFFFFF;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="530" y="180" width="190" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="yIfiVK84djzsoDWenFQo-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#23445D;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="yIfiVK84djzsoDWenFQo-7" target="yIfiVK84djzsoDWenFQo-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yIfiVK84djzsoDWenFQo-7" value="&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;b&gt;Additional MODIS Pre-processing&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;GOES-Modis_U-Net_Data_Preprocessing.ipynb&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;Input:&lt;/b&gt;&lt;span style=&quot;background-color: initial;&quot;&gt; 500m MODIS blue sky albedo - EPSG:4326&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;b&gt;Output:&lt;/b&gt; 500m MODIS blue sky albedo clipped to SAIL - EPSG 32613, invalid MODIS dates list with &amp;gt;60% pixels missing&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;b&gt;Files: &lt;/b&gt;blue_sky_albedo_sail&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;labelBackgroundColor=none;fillColor=#182E3E;strokeColor=#FFFFFF;fontColor=#FFFFFF;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="310" y="280" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="yIfiVK84djzsoDWenFQo-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#23445D;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="yIfiVK84djzsoDWenFQo-15" target="yIfiVK84djzsoDWenFQo-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yIfiVK84djzsoDWenFQo-15" value="&lt;font size=&quot;1&quot;&gt;&lt;b&gt;500m U-Net&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font size=&quot;1&quot;&gt;Albedo-U-Net.py, Run-Albedo-U-Net.ipynb&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;1&quot;&gt;&lt;b&gt;Input:&amp;nbsp;&lt;/b&gt;500m roughly interpolated GOES, 500m MODIS blue sky (ground truth)&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;1&quot;&gt;&lt;b&gt;Output:&amp;nbsp;&lt;/b&gt;2D 21x19 numpy arrays - 500m GOES data&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;1&quot;&gt;&lt;b&gt;Files: &lt;/b&gt;U-Net Results _masked, _not_masked&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#FFFFFF;fontColor=#FFFFFF;fillColor=#182E3E;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="305" y="440" width="210" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="yIfiVK84djzsoDWenFQo-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#23445D;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="yIfiVK84djzsoDWenFQo-19" target="yIfiVK84djzsoDWenFQo-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yIfiVK84djzsoDWenFQo-19" value="&lt;b style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;MODIS Visualizations and Analysis&lt;/font&gt;&lt;/b&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Final_Visualizations.ipynb&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;b&gt;Input: &lt;/b&gt;2D U-Net numpy arrays&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;b style=&quot;&quot;&gt;Output: &lt;/b&gt;GOES 500m blue sky albedo rasterized (tif), MODIS 500m interpolated blue sky albedo rasterized (tif) - EPSG 32613, R^2, RMSE&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;b&gt;Files: &lt;/b&gt;GOES 500m-raster, 500m-masked-raster; MODIS interpolated-500m&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#FFFFFF;fontColor=#FFFFFF;fillColor=#182E3E;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="310" y="585" width="200" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="yIfiVK84djzsoDWenFQo-22" value="&lt;font size=&quot;1&quot;&gt;&lt;b&gt;20m U-Net (Hypothetical)&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font size=&quot;1&quot;&gt;Albedo-U-Net.py, Run-Albedo-U-Net.ipynb&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;1&quot;&gt;&lt;b&gt;Input:&amp;nbsp;&lt;/b&gt;500m GOES blue sky albedo, 20m Sentinel-2 blue sky albedo (ground truth)&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;1&quot;&gt;&lt;b&gt;Output:&amp;nbsp;&lt;/b&gt;2D 21x19 numpy arrays - 20m GOES data&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#FFFFFF;fontColor=#FFFFFF;fillColor=#182E3E;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="310" y="960" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="yIfiVK84djzsoDWenFQo-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#23445D;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="yIfiVK84djzsoDWenFQo-25" target="yIfiVK84djzsoDWenFQo-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yIfiVK84djzsoDWenFQo-25" value="&lt;div&gt;&lt;font size=&quot;1&quot;&gt;&lt;b&gt;20m Sentinel-2 Blue Sky Albedo (In Progress)&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: x-small; background-color: initial;&quot;&gt;Sentinel-2-Data_Processing&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;font-size: x-small; background-color: initial;&quot;&gt;Input:&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;font-size: x-small; background-color: initial;&quot;&gt;500m MCD43A1 (BRDF) - MODIS projection, 500m MOD09GA (surface reflectance) - MODIS projection, Sentinel-2 20m L2A (surface reflectance) - EPSG:4326&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;1&quot;&gt;&lt;b&gt;Output:&amp;nbsp;&lt;/b&gt;Sentinel-2 20m blue sky albedo over SAIL - EPSG 32613&lt;/font&gt;&lt;/div&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;strokeColor=#FFFFFF;fontColor=#FFFFFF;fillColor=#182E3E;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="280" y="750" width="260" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="yIfiVK84djzsoDWenFQo-34" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#23445D;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" target="yIfiVK84djzsoDWenFQo-22">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="690" y="840" as="sourcePoint" />
+            <mxPoint x="640" y="910" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yIfiVK84djzsoDWenFQo-35" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#23445D;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="yIfiVK84djzsoDWenFQo-19">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="520" y="650" as="sourcePoint" />
+            <mxPoint x="690" y="840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yIfiVK84djzsoDWenFQo-36" value="&lt;b style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Sentinel Visualizations and Analysis&lt;/font&gt;&lt;/b&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;Input: &lt;/b&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2D U-Net numpy arrays&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;b style=&quot;&quot;&gt;Output: &lt;/b&gt;20m GOES blue sky albedo rasterized (tif), 20m Sentinel-2 blue sky albedo rasterized (tif) - EPSG32613&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#FFFFFF;fontColor=#FFFFFF;fillColor=#182E3E;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="310" y="1110" width="200" height="115" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
